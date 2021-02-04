@@ -1,0 +1,203 @@
+/* 
+  Theme Name: newTheme
+  Text Domain: newTheme
+  Version: 1.0
+  Description: my new theme
+  Tags: left-sidebar, resposive, fancy
+  Author: me
+  Author URI : http://localhost/wordpress
+*/
+
+/* font */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+*{
+  margin: 0;
+  padding : 0;
+  box-sizing: border-box;
+}
+
+/* 전역 설정 */
+body{
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+p{
+  line-height: 1.65em;
+}
+
+a{
+  color: #006ec3;
+  text-decoration: none;
+}
+
+
+
+/* clear fix */
+.clearfix:before,.clearfix:after{
+  content:'';
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+
+
+
+
+/* 일반 레이아웃 */
+div.container{
+  max-width : 920px;
+  margin : 0 auto;
+  padding : 0 20px 0 20px;
+  word-break: break-all;
+}
+
+article.post{
+  border-bottom: 2px dotted #bbb;
+}
+article.post:last-of-type{
+  border-bottom: none;
+}
+.site-header{
+  border-bottom: 2px solid #999;
+}
+
+.site-footer{
+  margin-top: 30px;
+  border-top: 2px solid #999;
+}
+
+.site-nav ul li {
+  list-style:none;
+  float : left;
+}
+
+.site-nav ul:before, .site-nav ul:after{
+  content: "";
+  display: table;
+}
+
+.site-nav ul:after{
+  clear: both;
+}
+
+/* 헤더 메뉴 */
+.site-header .site-nav ul li a{
+  display : block;
+  padding : 10px 18px;
+  border: 1px solid #999;
+  border-bottom: 0;
+  margin-right: 5px;
+}
+.site-header .site-nav ul li a:hover{
+  background-color: #efefef;
+}
+.site-header .site-nav ul li.current-menu-item a{
+  background-color: #006ec3;
+  color: white;
+}
+
+
+.site-footer .site-nav ul li a{
+  margin-right: 5px;
+  padding-right: 5px;
+  border-right: 1px dotted #999;
+}
+
+.site-footer .site-nav ul li:last-of-type a{
+  border-right: none;
+}
+
+
+/* 페이지 */
+article.page h2{
+font-size: 2.5rem;
+}
+
+.content-box{
+  padding: 30px 30px;
+}
+
+/* 페이지 서브메뉴 */
+.site-nav.sub-nav{
+  display: table;
+  width: 100%;
+  margin: 0;
+}
+.site-nav.sub-nav ul li{
+  width:33%
+}
+
+.site-nav.sub-nav ul li a{
+  display:table-cell;
+  width:1%;
+  border: 2px solid #fdd043;
+  padding: 10px 20px; 
+  border-right: 0;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.site-nav.sub-nav ul li:last-of-type a{
+  border-right: 2px solid #fdd043;
+}
+
+.site-nav.sub-nav ul li a:hover{
+  background-color: #FDD043;
+  color: white;
+}
+.site-nav.sub-nav ul li:last-of-type a{
+  border-right: 2px solid #FDD043;
+}
+.site-nav.sub-nav ul li.current_page_item a{
+  color: white;
+  background-color: #FDD043;
+}
+.site-header nav ul li.current-page-ancestor a{
+  background-color: #006ec3;
+  color: white;
+}
+
+
+
+
+
+/* 업무영역 페이지 */
+.title-column{
+  width:30%;
+  float: left;
+}
+.content-column{
+  width:70%;
+  float: right;
+}
+
+
+/* 푸터 페이지 */
+.info-box{
+  width:30%;
+  float: right;
+  margin: 0 0 30px 30px;
+  padding: 20px;
+  background-color: #eee;
+}
+
+
+/* post */
+
+.post h2{
+  margin-bottom: 0;
+}
+
+p.post-info{
+  font-size: 0.7rem;
+  color: #808080;
+}
+p.post-info a{
+  color: #808080;
+  border-bottom: 1px solid #808080;
+}
